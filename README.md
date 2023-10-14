@@ -9,8 +9,9 @@ Requires wlroots 0.13+
 
 ## Installation
 
-There is an AUR package for wlrctl [here][aur-wlrctl].
-And an openSUSE package [here][os-wlrctl].
+There is an AUR package for wlrctl [here][aur-wlrctl],
+an openSUSE package [here][os-wlrctl],
+and a Makedeb package [here][mpr-wlrctl].
 
 Otherwise, build with meson/ninja e.g.
 
@@ -48,5 +49,6 @@ You can send patches to the [mailing list][list-wlrctl] or submit an issue on th
 
 [aur-wlrctl]: https://aur.archlinux.org/packages/wlrctl
 [os-wlrctl]: https://build.opensuse.org/package/show/X11:Wayland/wlrctl
+[mpr-wlrctl]: https://mpr.makedeb.org/packages/wlrctl-git
 [todo-wlrctl]: https://todo.sr.ht/~brocellous/wlrctl
 [list-wlrctl]: https://lists.sr.ht/~brocellous/public-inbox
