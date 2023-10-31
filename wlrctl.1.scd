@@ -67,6 +67,9 @@ wlrctl [options...] [command]
 *focus* [matches...]
 	Instruct the compositor to focus matching windows.
 
+*close* [matches...]
+	Instruct the compositor to close matching windows.
+
 *find* [matches...]
 	Exit with a successful return code iff there is at least one window
 	matching the provided criteria.
