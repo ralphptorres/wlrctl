@@ -2,9 +2,6 @@
 
 local cmd="$0"
 typeset -A opt_args
-__wlrctl() {
-	"$cmd" "$@"
-}
 
 local -a wlrcmd_keyboard
 _regex_words action 'keyboard action' \
@@ -25,7 +22,7 @@ wlrcmd_pointer=("$reply[@]")
 
 (( $+functions[_wlr_toplevel_attr] )) || _wlr_toplevel_attr() {
 	local -a windows matchspecs
-	windows=(${(@f)"$(__wlrctl toplevel list)"})
+	windows=(${(@f)"$(_call_program -l toplevels wlrctl toplevel list)"})
 	matchspecs=( app_id:${^windows%%: *} title:${^windows#*: } )
 	matchspecs+=( state:{{un,}minimized,{un,}maximized,{in,}active,{un,}fullscreen} )
 	_multi_parts ':' matchspecs
