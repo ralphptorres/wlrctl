@@ -125,7 +125,8 @@ main(int argc, char *argv[])
 	const char *usage = 
 		"Usage: wlrctl [options] <command> <action>\n"
 		"\n"
-		"Commands: keyboard|pointer|window|toplevel|output\n"
+		"Commands:\n"
+		"  keyboard|pointer|window|toplevel|output\n"
 		"\n"
 		"Actions:\n"
 		"  keyboard: type <string> [modifiers]\n"
