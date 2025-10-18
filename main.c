@@ -123,8 +123,17 @@ main(int argc, char *argv[])
 	};
 
 	const char *usage = 
-		"Usage: wlrctl [options] [keyboard|pointer|toplevel] <action>\n"
+		"Usage: wlrctl [options] <command> <action>\n"
 		"\n"
+		"Commands: keyboard|pointer|window|toplevel|output\n"
+		"\n"
+		"Actions:\n"
+		"  keyboard: type <string> [modifiers]\n"
+		"  pointer:  click <button> | move <dx> <dy> | scroll <dy> <dx>\n"
+		"  toplevel: minimize|maximize|fullscreen|focus|find|wait|waitfor <matches>\n"
+		"  output:   list\n"
+		"\n"
+		"Options:\n"
 		"  -h, --help     Show a help message and quit\n"
 		"  -v, --version  Show a version number and quit\n"
 		;
